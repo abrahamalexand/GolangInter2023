@@ -1,0 +1,31 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html" />
+<link rel="import" href="shared-styles.html" />
+
+<dom-module id="about-page">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">3</div>
+      <h1>About</h1>
+      <p>Nama : Alexander Abraham Pasaribu</p>
+      <p>NPM : 50420116</p>
+    </div>
+  </template>
+
+  <script>
+    class AboutPage extends Polymer.Element {
+      static get is() {
+        return "about-page";
+      }
+    }
+
+    window.customElements.define(AboutPage.is, AboutPage);
+  </script>
+</dom-module>

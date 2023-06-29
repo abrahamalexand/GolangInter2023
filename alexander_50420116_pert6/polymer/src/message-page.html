@@ -1,0 +1,39 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html" />
+<link
+  rel="stylesheet"
+  href="../bower_components/polymer/lib/elements/dom-if.html"
+/>
+<link rel="import" href="shared-styles.html" />
+
+<dom-module id="message-page">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <template is="dom-if" if="{{isAdmin}}">
+      <div class="card">
+        <div class="circle">2</div>
+        <h1>Your Message</h1>
+        <p>Ini pesan rahasia</p>
+        <p>Jangan beri tahu siapapun</p>
+        <p>Nama : Alexander Abraham Pasaribu</p>
+        <p>NPM : 50420116</p>
+      </div>
+    </template>
+  </template>
+
+  <script>
+    class MessagePage extends Polymer.Element {
+      static get is() {
+        return "message-page";
+      }
+    }
+
+    window.customElements.define(MessagePage.is, MessagePage);
+  </script>
+</dom-module>
