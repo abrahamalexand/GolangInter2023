@@ -1,0 +1,16 @@
+extract dulu polymer nya
+
+jangan lupa database nya dibikin. syntax nya ada di pertemuan7.sql tinggal copas
+buatnya bisa dari shell atau langsung di phpmyadmin nya juga sabi
+
+yang harus diganti cuman di main.go
+
+line 53
+line 310
+line 315
+
+selebihnya sama tinggal run aja. XXAMPP jangan lupa dinyalain
+
+run di browser  nya gausah pake localhost tinggal http:(ip address nya)
+
+contoh : http://127.0.0.1:8016 
